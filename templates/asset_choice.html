@@ -1,0 +1,21 @@
+<head>
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/investment" method="POST">
+            <input type="submit" name="type" value="Equity">
+        </form>
+        <form action="/investment" method="POST">
+            <input type="submit" name="type" value="Fixed Income">
+        </form>
+        <form action="/investment" method="POST">
+            <input type="submit" name="type" value="Alternatives">
+        </form>
+        <form action="/main" method="POST">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
